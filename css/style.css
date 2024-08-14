@@ -1,10 +1,42 @@
 @import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;500;600;700&family=Mulish:wght@400;500;600;700&display=swap");
 
+.rowdies-light {
+   font-family: "Rowdies", sans-serif;
+   font-weight: 300;
+   font-style: normal;
+ }
+ 
+ .rowdies-regular {
+   font-family: "Rowdies", sans-serif;
+   font-weight: 400;
+   font-style: normal;
+ }
+ 
+ .rowdies-bold {
+   font-family: "Rowdies", sans-serif;
+   font-weight: 700;
+   font-style: normal;
+ }
+
+ .russo-one-regular {
+   font-family: "Russo One", sans-serif;
+   font-weight: 400;
+   font-style: normal;
+ }
+ 
+
+
+.montserrat-<uniquifier> {
+   font-family: "Montserrat", sans-serif;
+   font-optical-sizing: auto;
+   font-weight: 600;
+   font-style: normal;
+ }
 
 .slider-area, .slider-area2, .about-area1, .about-area2, .topic-area {
-      background-image: radial-gradient(#aaa5a5 1.5px, transparent 1.5px);
-      background-size: 20px 20px;
-      background-color: #ffffff;
+   background-image: linear-gradient(#d5d5d5 1px, transparent 1px), linear-gradient(to right, #d5d5d5 1px, transparent 1px);
+   background-size: 52px 52px;
+   background-color: #fafafa;
   }
 
   .header-area .header-bottom{
@@ -20,6 +52,7 @@
    justify-content: center;
    text-align: center;
    background-color: rgba(33, 33, 33, 0);
+   font-family: 'Russo One', sans-serif;
 }
 
 .glitch {
@@ -57,6 +90,224 @@
    clip: rect(0, 900px, 0, 0);
    animation: noise-after 2s infinite linear alternate-reverse;
 }
+
+@media (max-width: 768px) {
+   .glitch {
+       font-size: 32px;
+       letter-spacing: 3px;
+   }
+
+   .button-grid {
+       grid-template-columns: 1fr; /* Stack buttons vertically on smaller screens */
+   }
+
+   .info-button {
+       padding: 12px;
+       padding-right: 20px;
+       padding-left: 20px;
+   }
+
+   .info-button img {
+       width: 35px;
+       height: 35px;
+   }
+
+   .button-text p {
+       font-size: 14px;
+   }
+}
+
+/* Further optimization for very small screens */
+/* {@media (max-width: 480px) {
+   .glitch {
+       font-size: 24px;
+       letter-spacing: 2px;
+   }
+
+   .info-button {
+       padding: 6px;
+   }
+
+   .info-button img {
+       width: 30px;
+       height: 30px;
+   }
+
+   .button-text p {
+       font-size: 12px;
+   }
+}} */
+
+.card {
+   backdrop-filter: blur(16px) saturate(180%);
+   -webkit-backdrop-filter: blur(16px) saturate(180%);
+   background: linear-gradient(45deg, #ffffff, #f0f0f0); /* Gradient background from white */
+   border-radius: 12px;
+   border: 5px solid transparent;
+   overflow: hidden;
+   position: relative;
+   transition: transform 0.3s ease-in-out, border 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+   box-shadow: 0 4px 15px rgba(255, 170, 0, 0.6);
+   scroll-snap-align: center;
+   flex: 0 0 80%;
+   --border-angle: 0turn;
+   
+   /* Adding border animation with conic gradient */
+   background: linear-gradient(45deg, #ffffff, #f0f0f0) padding-box, 
+               conic-gradient(from var(--border-angle), transparent 25%, #ffaa00 50%, transparent 75%) border-box;
+   
+   animation: border-spin 3s linear infinite;
+}
+
+.card:hover {
+   transform: scale(1.05);
+   border: 5px solid transparent; /* Keep border transparent to show animation */
+   box-shadow: 0 8px 20px rgba(255, 170, 0, 0.8);
+   animation-play-state: paused;
+}
+
+@keyframes border-spin {
+   to {
+      --border-angle: 1turn;
+   }
+}
+
+@property --border-angle {
+  syntax: "<angle>";
+  inherits: true;
+  initial-value: 0turn;
+}
+
+.card::before {
+   content: "";
+   position: absolute;
+   top: -50%;
+   left: -50%;
+   width: 200%;
+   height: 200%;
+   background: linear-gradient(45deg, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.1));
+   z-index: 0;
+   transition: opacity 0.3s ease-in-out;
+   opacity: 0;
+   pointer-events: none;
+}
+
+.card:hover::before {
+   opacity: 1;
+   animation: borderAnimation 2s linear infinite;
+}
+
+@keyframes borderAnimation {
+   0% {
+       transform: translateX(0) translateY(0);
+   }
+   100% {
+       transform: translateX(100%) translateY(100%);
+   }
+}
+
+.properties__caption {
+   position: relative;
+   z-index: 1;
+}
+
+.card-grid {
+   display: grid;
+   grid-template-columns: repeat(2, 1fr);
+   grid-gap: 20px; /* Space between the cards */
+   margin-top: 20px;
+}
+
+.feature-card {
+   display: flex;
+   align-items: center;
+   padding: 20px;
+   background: #f7f7f7;
+   border-radius: 12px;
+   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.card-icon {
+   margin-right: 15px;
+}
+
+.card-content {
+   font-size: 20px;
+   font-family: 'Russo One', sans-serif;
+   color: #333;
+}
+
+
+/* Custom card style */
+.single-topic {
+   position: relative;
+   border-radius: 20px;
+   margin: 20px;
+   background: #fff;
+   box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+   overflow: hidden;
+ }
+ 
+ .single-topic::before {
+   content: '';
+   position: absolute;
+   top: -2px;
+   left: -2px;
+   right: -2px;
+   bottom: -2px;
+   background: linear-gradient(45deg, #ff0084, #33001b, #1c003e);
+   z-index: -1;
+   border-radius: 20px;
+   transition: transform 0.5s ease-in-out;
+ }
+ 
+ .single-topic:hover::before {
+   transform: rotate(5deg);
+ }
+ 
+ .topic-img {
+   position: relative;
+   border-radius: 20px 20px 0 0;
+ }
+ 
+ .topic-content-box {
+   padding: 20px;
+ }
+ 
+ .bonus-number {
+   position: absolute;
+   top: 5px;
+   left: 50%;
+   transform: translateX(-50%);
+   background: linear-gradient(45deg, #ffaa00, #ffaa00);
+   border-radius: 5px;
+   padding: 10px 20px;
+   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+ }
+ 
+ .bonus-number h4 {
+   margin: 0;
+   color: #000;
+   font-weight: bold;
+ }
+ 
+ .topic-content h4 a {
+   text-decoration: none;
+   color: inherit;
+ }
+ 
+ .topic-content h4 {
+   color: #333;
+   font-weight: bold;
+ }
+ 
+ .topic-content h3 {
+   color: #000;
+   font-weight: bold;
+   margin-top: 10px;
+ }
+ 
+ 
 
 @keyframes noise-before {
    0% {
@@ -252,13 +503,40 @@
    border: 1px  #4a4a4a; /* Inner frame border color and width */
    padding: 10px; /* Space between inner frame and iframe */
    border-radius: 3px; /* Slightly rounded corners for the inner frame */
-   background-color: #4a4a4a; /* Inner frame background color */
+   background-color: #000000; /* Inner frame background color */
 }
 
 iframe {
    border-radius: 2px; /* Slightly rounded corners for the iframe */
 }
 
+
+@media (max-width: 480px) {
+   .card-grid {
+       grid-template-columns: 1fr; /* Keep it a single column layout for smaller phones */
+       gap: 15px;
+   }
+
+   .feature-card {
+       padding: 10px;
+       font-size: 14px; /* Slightly smaller font size for better readability */
+   }
+
+   .card-icon img {
+       width: 20px;
+       height: 20px;
+       margin-right: 10px;
+   }
+
+   .section-tittle h2 {
+       font-size: 24px; /* Adjust the title font size for small screens */
+   }
+
+   .right-img img {
+       width: 100%; /* Make the image responsive for mobile */
+       height: auto;
+   }
+}
 
 .draw-lines {
  text-decoration: none; /* Prevent underline on hover */
@@ -333,7 +611,7 @@ iframe {
 
 @media (max-width: 768px) {
    .col-12  {
-       font-size: 30px; /* Adjust size for smaller screens */
+       font-size: 20px; /* Adjust size for smaller screens */
        margin-top: 1px; /* Adjust margin */
        margin-bottom: 10px; /* Adjust margin */
        padding: 1px; /* Adjust padding */
@@ -341,45 +619,67 @@ iframe {
    }
 
    .write-12 {
-       font-size: 30px; /* Adjust size for smaller screens */
+       font-size: 18px; /* Adjust size for smaller screens */
        margin-top: 1px; /* Adjust margin */
        margin-bottom: 1px; /* Adjust margin */
        padding: 1px; /* Adjust padding */
-       font-weight: 760; /* Adjust font weight */
-       font-family: 'Alan', sans-serif;
+      font-family: 'Alan', sans-serif;
 
    }
    .write-13 {
-       font-size: 30px; /* Adjust size for smaller screens */
+       font-size: 18px; /* Adjust size for smaller screens */
        margin-top: -1px; /* Adjust margin */
        margin-bottom: 1px; /* Adjust margin */
        padding: 0px; /* Adjust padding */
-       font-weight: 760; /* Adjust font weight */
+       padding-left: -10px; /* Adjust padding */
+      
 
+   }
+
+   @keyframes move-border {
+      0% {
+          background: linear-gradient(white, white) padding-box, 
+          linear-gradient(90deg, transparent, #FFAA00, transparent) border-box;
+      }
+      100% {
+          background: linear-gradient(white, white) padding-box, 
+          linear-gradient(90deg, transparent, #FFAA00, transparent) 200%;
+      }
+  }
+
+   .coll-12 {
+       font-size: 20px; /* Adjust size for smaller screens */
+       margin-top: 1px; /* Adjust margin */
+       margin-bottom: 1px; /* Adjust margin */
+       padding: 1px; /* Adjust padding */
    }
 
    .inner-frame {
-       padding: 25px; /* Adjust padding */
+       padding-top: 25px; /* Adjust padding */
        padding-bottom: 10px; /* Adjust padding */
        padding-right: 10px; /* Adjust padding */
+       align-items: bottom; /* Adjust alignment */ 
        margin-left: 10px; /* Adjust margin */
-       margin-top: 100px; /* Adjust margin */
-       margin-bottom: 20px; /* Adjust margin */
+       margin-top: 240px; /* Adjust margin */
+       margin-bottom: 0px; /* Adjust margin */
        max-width: 100%; /* Adjust width */
        max-height: 100%; /* Adjust height */
        padding-left: 10px; /* Adjust padding */
+       position: relative; /* Adjust position */
    }
 
    .outer-frame {
-       padding: 25px; /* Adjust padding */
-       padding-bottom: 10px; /* Adjust padding */
+       padding-top: 25px; /* Adjust padding */
+       padding-bottom: 20px; /* Adjust padding */
        padding-right: 10px; /* Adjust padding */
        margin-left: 10px; /* Adjust margin */
-       margin-top: 130px; /* Adjust margin */
-       margin-bottom: 20px; /* Adjust margin */
+       align-items: center; /* Adjust alignment */
+       margin-top: 190px; /* Adjust margin */
+       margin-bottom: 0px; /* Adjust margin */
        max-width: 100%; /* Adjust width */
        max-height: 100%; /* Adjust height */
        padding-left: 10px; /* Adjust padding */
+       position: relative; /* Adjust position */
    }
 
    header .btn {
@@ -390,7 +690,7 @@ iframe {
 
 @media (max-width: 768px) {
    .slider-area .container {
-       padding: 5 10px; /* Add padding to avoid content touching edges */
+       padding: 5px 10px; /* Add padding to avoid content touching edges */
    }
 
    .slider-area .row {
@@ -399,31 +699,42 @@ iframe {
 
    .slider-area .col-xl-6 {
        width: 100%; /* Make columns full width */
-       height: 100%; /* Make columns full height */
        padding: 14px; /* Add padding for better spacing */
-      
    }
 
    .button-grid {
-       grid-template-columns: 1fr; /* Stack buttons vertically */
+       grid-template-grif: 1fr; /* Stack buttons vertically */
        gap: 15px; /* Increase gap for better spacing */
-       margin-top: 20px; /* Add margin for spacing */
-       margin-left: -10px; /* Add margin for spacing */
-       margin-right: 20px; /* Add margin for spacing */
-       padding-left: -10px; /* Add padding for spacing */
-       padding-right: 10px; /* Add padding for spacing */
+       margin: 0px 10px 15px 0px;
+       padding: 12px -10px 12px 10px;
+       position: relative;
    }
 
    .info-button {
-       padding: 15px; /* Increase padding for readability */
+      padding: 10px; 
+      border-radius: 10px; 
+      text-align: center; 
+      box-shadow: 0 2px 10px rgba(0, 0, 255, 0.2); 
+      position: relative;
+      margin: 0px 10px 15px 0px;
+      padding: 12px 10px 12px 10px;
+       
+       width: 100%; /* Ensure buttons take full width with padding */
+       height: 90%; /* Make height flexible */
+      
        box-shadow: none; /* Remove shadow for mobile */
+       width: 100%; /* Ensure button takes full width */
+       box-sizing: border-box; /* Ensure padding and borders are included in the width */
    }
 
    .btn {
        font-size: 16px; /* Adjust font size */
-       padding: 12px 2.193z0px; /* Adjust padding */
+       padding: 12px 20px; /* Adjust padding */
    }
 }
+
+
+
 
 @media (max-width: 768px) {
    .services-area .col-lg-4 {
