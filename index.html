@@ -17,6 +17,9 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet">   
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
 
     <!-- CSS here -->
     <link rel="stylesheet" href="/css/bootstrap.min.css">
@@ -62,22 +65,30 @@
             <div class="main-header">
                 <div class="container-fluid">
                     <div class="row justify-content-center text-center">
-                        <div class="col-12">
+                        <div class="col-12" style="margin-top: 20px; align-items: center; ">
                             <!-- Centered Header Text with Adjusted Position and Size -->
-                            <h2 style="color: black; font-weight: bold; font-size: 23px; margin-top: 20px; font-family: 'Rowdies', sans-serif;">
-                                <span class="write-12" style="color: #2d2c2c;">Bhagwad Geeta</span> 
+                            <h2 style="color: black; font-weight: bold; font-size: 25px; margin-top: 10px;margin-bottom: 10px; font-family: 'Plus Jakarta Sans', sans-serif;">
+                                <span class="write-12" style="color: #2d2c2c;">Bhagavad Geeta</span> 
                                 <span class="write-13" style="color: #2d2c2c;">for Modern Life</span>
                             </h2>
                             <!-- Centered Button Below the Text with Adjusted Position and Border -->
-                            <a href="#" class="btnn" style="background-color: #FFAA00; color: black; margin: 10px 0px 40px 0px; padding: 4px 10px; border-radius: 14px; border: 1px solid black; box-shadow: 0px 0px 14px 0px rgba(0, 0, 0, 0.29); font-weight: bold; font-size: 18px; text-transform: uppercase; font-family: 'ChunkFive', Sans-serif;">
+                            <a href="#" class="btnn" style="background-color: #FFAA00; color: white; margin: 15px 0px 40px 10px; padding: 6px 10px; border-radius: 14px; border: 1px solid black; box-shadow: 0px 0px 14px 0px rgba(0, 0, 0, 0.29); font-weight: bold; font-size: 18px; text-transform: uppercase; font-family: 'ChunkFive', Sans-serif;">
                                 3 Hour Live Workshop
                             </a>
                         </div>
                         <!-- Large Heading Below the Button -->
-                        <div class="col-12" >
-                            <h3 class ="coll-12" style="font-size: 48px; color: #2d2c2c; margin-bottom: 20px; margin-top: 20px; font-family: 'Russo One', sans-serif;">
-                                Solve all your life problems with <br> <span style="color: #ffaa00; font-weight: bold;">Bhagavad Geeta</span>
-                            </h3>
+                        <div>
+                            <div class="coll-12">
+                                <span style = "font-weight: 800; font-family: 'Plus Jakarta Sans', sans-serif;">Solve all your life problems with </span><br> 
+                                <span style="color: #ffaa00; font-weight: 800; position: relative;">
+                                    Bhagavad Geeta
+                                    <!-- Animated SVG Under the Text -->
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 150" preserveAspectRatio="none" style="position: absolute; bottom: -5px; left: 0; width: 100%; height: 20px;">
+                                        <path d="M5,125.4c30.5-3.8,137.9-7.6,177.3-7.6c117.2,0,252.2,4.7,312.7,7.6" fill="none" stroke="#ffaa00" stroke-width="5" stroke-linecap="round" />
+                                        <path d="M26.9,143.8c55.1-6.1,126-6.3,162.2-6.1c46.5,0.2,203.9,3.2,268.9,6.4" fill="none" stroke="#ffaa00" stroke-width="5" stroke-linecap="round" />
+                                    </svg>
+                                </span>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -85,6 +96,7 @@
         </div>
         <!-- Header End -->
     </header>
+    
     
     
     <main>
@@ -95,12 +107,13 @@
                 <div class="single-slider slider-height d-flex align-items-center">
                     <div class="container">
                         <div class="row">
+                            
                             <!-- Left Column: Video Embed -->
                             <div class="col-xl-6 col-lg-5 col-md-12">
                                 <div class="outer-frame">
-                                    <div class="inner-frame">
-                                        <iframe width="100%" height="315" src="https://www.youtube.com/embed/6TQe-5VbfOk" title="Bhagavad Gita Chapter 1 [Full]  The Grief of Arjuna | Hinduism Enlightenment" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                                    </div>
+                                    
+                                        <iframe width="100%" height="300px" src="https://www.youtube.com/embed/6TQe-5VbfOk" title="Bhagavad Gita Chapter 1 [Full]  The Grief of Arjuna | Hinduism Enlightenment" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                                    
                                 </div>
                             </div>
     
@@ -108,50 +121,58 @@
                             <div class="col-xl-6 col-lg-7 col-md-12" style="padding-left: 30px; display: flex; flex-direction: column; justify-content: center;">
                                 <!-- Workshop Details Text -->
                                 <div class="glitch-wrapper">
-                                    <div class="glitch" data-glitch="Workshop Details">Workshop Details</div>
+                                    <div class="glitch" data-glitch="Workshop Details">Workshop Details</div>                                    
                                 </div>
+                                <div class="glitch-img">
+                                <img src="./img/icon/4d05efe6-510c-4e1e-a4fe-dbd4857534c9.svg" alt="Icon 5" style="width: 132px; height: 32px;margin-left: 5px;">
+                                </div>
+                                
                                 <!-- Buttons Grid -->
-                                <div class="button-grid" style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 10px; margin-bottom: 20px;">
-                                    <!-- Button 1 -->
-                                    <div class="info-button" style="background-color: #ffaa00; padding: 10px; border-radius: 10px; text-align: center; box-shadow: 0 2px 10px rgba(0, 0, 255, 0.2); position: relative;">
-                                        <img src="./img/icon/icons8.png" alt="Icon 1" style="position: absolute; left: 10px; top: 50%; transform: translateY(-50%); width: 50px; height: 50px;">
-                                        <p style="color: #000000; font-weight: bold; margin: 0; padding-left: 70px;">Date</p>
-                                        <p style="color: #000000; font-weight: bold; margin: 0; padding-left: 70px;">SUN, 11 Aug 2024</p>
-                                    </div>
+                                <div class="button-grid" style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 10px; margin-bottom: 20px;" >
+                                    <!-- Button 1 --> 
+                                    <div class="info-button" style="background-color: #ffffff; padding: 10px; border-radius: 10px; text-align: left; box-shadow: 0 2px 10px rgba(255, 170, 0, 0.3); position: relative;">
+                                        <img src="./img/icon/icons8.svg" alt="Icon 1" style="position: absolute; left: 10px; top: 50%; transform: translateY(-50%); width: 32px; height: 32px;">
+                                        <p style="color: #000000; text-align: left; font-weight: bold; margin: 0; padding-left: 70px;">Date</p>
+                                        <p style="color: #000000; text-align: left; font-weight: bold; margin: 0; padding-left: 70px;">SUN, 11 Aug 2024</p>
+                                    </div>  
                                     <!-- Button 2 -->
-                                    <div class="info-button" style="background-color: #ffaa00; padding: 10px; border-radius: 10px; text-align: center; box-shadow: 0 2px 10px rgba(0, 0, 255, 0.2); position: relative;">
-                                        <img src="./img/icon/icons9.png" alt="Icon 2" style="position: absolute; left: 10px; top: 50%; transform: translateY(-50%); width: 50px; height: 50px;">
-                                        <p style="color: #000000; font-weight: bold; margin: 0; padding-left: 70px;">Time</p>
-                                        <p style="color: #000000; font-weight: bold; margin: 0; padding-left: 70px;">10 AM - 1 PM</p>
+                                    <div class="info-button" style="background-color: #ffffff; padding: 10px; border-radius: 10px; text-align: left; box-shadow: 0 2px 10px rgba(255, 170, 0, 0.338); position: relative;">
+                                        <img src="./img/icon/icons9.svg" alt="Icon 2" style="position: absolute; left: 10px; top: 50%; transform: translateY(-50%); width: 32px; height: 32px;">
+                                        <p style="color: #000000; text-align: left; font-weight: bold; margin: 0; padding-left: 70px;">Time</p>
+                                        <p style="color: #000000; text-align: left; font-weight: bold; margin: 0; padding-left: 70px;">10 AM - 1 PM</p>
                                     </div>
                                     <!-- Button 3 -->
-                                    <div class="info-button" style="background-color: #ffaa00; padding: 10px; border-radius: 10px; text-align: center; box-shadow: 0 2px 10px rgba(0, 0, 255, 0.2); position: relative;">
-                                        <img src="./img/icon/icons10.png" alt="Icon 3" style="position: absolute; left: 10px; top: 50%; transform: translateY(-50%); width: 50px; height: 50px;">
-                                        <p style="color: #000000; font-weight: bold; margin: 0; padding-left: 70px;">Language</p>
-                                        <p style="color: #000000; font-weight: bold; margin: 0; padding-left: 70px;">Hindi</p>
+                                    <div class="info-button" style="background-color: #ffffff; padding: 10px; border-radius: 10px; text-align: left; box-shadow: 0 2px 10px rgba(255, 170, 0, 0.338); position: relative;">
+                                        <img src="./img/icon/icons10.svg" alt="Icon 3" style="position: absolute; left: 10px; top: 50%; transform: translateY(-50%); width: 32px; height: 32px;">
+                                        <p style="color: #000000; text-align: left; font-weight: bold; margin: 0; padding-left: 70px;">Language</p>
+                                        <p style="color: #000000; text-align: left; font-weight: bold; margin: 0; padding-left: 70px;">Hindi</p>
                                     </div>
                                     <!-- Button 4 -->
-                                    <div class="info-button" style="background-color: #ffaa00; padding: 10px; border-radius: 10px; text-align: center; box-shadow: 0 2px 10px rgba(0, 0, 255, 0.2); position: relative;">
-                                        <img src="./img/icon/icons11.png" alt="Icon 4" style="position: absolute; left: 10px; top: 50%; transform: translateY(-50%); width: 50px; height: 50px;">
-                                        <p style="color: #000000; font-weight: bold; margin: 0; padding-left: 70px;">Live</p>
-                                        <p style="color: #000000; font-weight: bold; margin: 0; padding-left: 70px;">On ZOOM</p>
+                                    <div class="info-button" style="background-color: #ffffff; padding: 10px; border-radius: 10px; text-align: left; box-shadow: 0 2px 10px rgba(255, 170, 0, 0.338); position: relative;">
+                                        <img src="./img/icon/icons11.png" alt="Icon 4" style="position: absolute; left: 10px; top: 50%; transform: translateY(-50%); width: 32px; height: 32px;">
+                                        <p style="color: #000000; text-align: left; font-weight: bold; margin: 0; padding-left: 70px;">Live</p>
+                                        <p style="color: #000000; text-align: left; font-weight: bold; margin: 0; padding-left: 70px;">On ZOOM</p>
                                     </div>
                                 </div>
     
                                 <!-- Register Now Button -->
                                 <div style="text-align: center; position: relative;">
-                                    <a href="#" class="btn draw-liness" 
-                                       style="background-color: #FFAA00; color: black; margin-top: 15px; padding: 15px 30px; border-radius: 14px; font-weight: bold; font-size: 18px; text-transform: uppercase; font-family: 'Vast Shadow', Sans-serif; position: relative;
-                                       text-decoration: none; overflow: hidden; display: inline-block; z-index: 1;">
+                                    <a href="#" class="btnn draw-liness" 
+                                       style="background-color: #FFAA00; color: white; margin-top: 15px; padding: 15px 50px; border-radius: 14px; font-weight: bold; font-size: 18px; text-transform: uppercase; font-family: 'Vast Shadow', Sans-serif; position: relative;
+                                       text-decoration:dotted; overflow: hidden; display: inline-block; z-index: 1; min-width: 350px; ">
                                         Register Now
-                                        <span style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; box-sizing: border-box; border-radius: 14px;
+                                        <span class="vasuki" style="position: relative; top: 0; left: 0;  height: 100%; box-sizing: border-box; border-radius: 14px;
                                             border: 2px solid transparent; background: transparent; 
-                                            background: linear-gradient(white, white) padding-box, 
+                                            background: linear-gradient(#ffaa00, #ffaa00) padding-box, 
                                             linear-gradient(90deg, transparent, #FFAA00, transparent) border-box; 
                                             animation: move-border 4s linear infinite; z-index: -1;">
                                         </span>
+                                        <span style="position: absolute; top: -50%; left: -75%; width: 200%; height: 200%; background: rgba(255, 255, 255, 0.5); 
+                                            transform: rotate(45deg); animation: slide-shine 1s infinite; z-index: 2;">
+                                        </span>
                                     </a>
                                 </div>
+                                
                             </div>
                         </div>
                     </div>
@@ -168,44 +189,90 @@
         <!-- ? services-area -->
         <div class="services-area">
             <div class="container">
-                <div class="row justify-content-sm-center">
-                    <div class="col-lg-4 col-md-6 col-sm-8">
-                        <div class="single-services mb-30">
-                            <div class="features-icon">
-                                <img src="./img/icon/icon1.svg" alt="">
-                            </div>
-                            <div class="features-caption">
-                                <h3>Seeking clarity </h3>
-                                <p>Struggling with overthinking, anxiety, or depression</p>
+                <div class="vasuka">
+                    <div class="vasuka-title">
+                        <div class="section-tittle text-center mb-55">
+                            <h2 style="font-family: 'Russo One', sans-serif">Who Should join this workshop?</h2>
+                            <div class="glitch-img">
+                                <img src="./img/icon/4d05efe6-510c-4e1e-a4fe-dbd4857534c9.svg" alt="Icon 5" style="width: 132px; height: 32px; margin-left: 5px;">
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-4 col-md-6 col-sm-8">
-                        <div class="single-services mb-30">
-                            <div class="features-icon">
-                                <img src="./img/icon/icon2.svg" alt="">
-                            </div>
-                            <div class="features-caption">
-                                <h3>Purpose of Life</h3>
-                                <p>Lacking confidence or struggling with self-doubt.</p>
-                            </div>
-                        </div>
+                    <div class="vasuka-car">
+                        <div class="row justify-content-sm-center">
+            <div class="col-lg-4 col-md-6 col-sm-8">
+                <div class="single-services mb-30">
+                    <div class="features-icon">
+                        <img src="./img/icon/icon1.svg" alt="">
                     </div>
-                    <div class="col-lg-4 col-md-6 col-sm-8">
-                        <div class="single-services mb-30">
-                            <div class="features-icon">
-                                <img src="./img/icon/icon3.svg" alt="">
-                            </div>
-                            <div class="features-caption">
-                                <h3>Free bonuses</h3>
-                                <p>Ready to free from negative thought patterns and habits</p>
-                            </div>
-                        </div>
+                    <div class="features-caption">
+                        <h3>Seeking clarity </h3>
+                        <p>Struggling with overthinking, anxiety, or depression</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-8">
+                <div class="single-services mb-30">
+                    <div class="features-icon">
+                        <img src="./img/icon/icon2.svg" alt="">
+                    </div>
+                    <div class="features-caption">
+                        <h3>Purpose of Life</h3>
+                        <p>Lacking confidence or struggling with self-doubt.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-8">
+                <div class="single-services mb-30">
+                    <div class="features-icon">
+                        <img src="./img/icon/icon3.svg" alt="">
+                    </div>
+                    <div class="features-caption">
+                        <h3>Free bonuses</h3>
+                        <p>Experiencing Relationship problems</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Additional 3 cards -->
+            <div class="col-lg-4 col-md-6 col-sm-8">
+                <div class="single-services mb-30">
+                    <div class="features-icon">
+                        <img src="./img/icon/icon3.svg" alt="">
+                    </div>
+                    <div class="features-caption">
+                        <h3>Mindful Living</h3>
+                        <p>	Seeking clarity, confidence and purpose in your life.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-8">
+                <div class="single-services mb-30">
+                    <div class="features-icon">
+                        <img src="./img/icon/icon2.svg" alt="">
+                    </div>
+                    <div class="features-caption">
+                        <h3>Positive Relations</h3>
+                        <p>Ready to break free from negative thought patterns . </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-8">
+                <div class="single-services mb-30">
+                    <div class="features-icon">
+                        <img src="./img/icon/icon1.svg" alt="">
+                    </div>
+                    <div class="features-caption">
+                        <h3>Achieving Goals</h3>
+                        <p>Determined to achieve personal or professional goals.</p>
                     </div>
                 </div>
             </div>
         </div>
-        
+        </div>
+    </div>
+ </div>
+</div>
+
       <!-- Courses area start -->
 <div class="courses-area section-padding40 fix">
     <div class="card-container">
@@ -214,7 +281,11 @@
             <div class="col-xl-7 col-lg-8">
                 <div class="section-tittle text-center mb-55">
                     <h2 style="font-family: 'Russo One', sans-serif">What you will learn in this workshop?</h2>
+                    <div class="glitch-img">
+                        <img src="./img/icon/4d05efe6-510c-4e1e-a4fe-dbd4857534c9.svg" alt="Icon 5" style="width: 132px; height: 32px;margin-left: 5px;">
+                        </div>
                 </div>
+                
             </div>
         </div>
         <div class="row">
@@ -301,7 +372,10 @@
         <div class="left-content1">
             <div class="section-tittle section-tittle2 mb-55">
                 <h2 class="" style="font-family: 'Russo One', sans-serif">What can you expect after attending the workshop?</h2>
+                
+                
             </div>
+            
             <div class="card-grid">
                 <div class="feature-card">
                     <div class="card-icon">
@@ -367,7 +441,7 @@
                     <div class="row justify-content-center">
                         <div class="col-xl-7 col-lg-8">
                             <div class="section-tittle text-center mb-55">
-                                <h2 style="font-family: 'Russo One', sans-serif"> Unlock Bonuses worth Rs.5000</h2>
+                                <h2 style="font-family: 'Russo One', sans-serif;">Unlock Bonuses worth Rs.5000</h2>
                             </div>
                         </div>
                     </div>
@@ -375,7 +449,7 @@
                         <div class="col-lg-4 col-md-6">
                             <div class="single-topic text-center mb-30" style="border: 2px solid #ddd; border-radius: 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); background-color: rgba(255,255,255,0.5); -webkit-backdrop-filter: blur(10px); backdrop-filter: blur(10px); border: 1px solid rgba(255,255,255,0.25);">
                                 <div class="topic-img" style="position: relative;">
-                                    <div style="border-radius: 10px 10px 0 0; background: rgba(255, 255, 255, 0.26); background: -webkit-linear-gradient(0deg, rgba(255, 255, 255, 0.26) 0%, #ffebb8 100%); background: linear-gradient(0deg, rgba(255, 255, 255, 0.26) 0%, #ffebb8 100%); height: 200px;"></div>
+                                    <div style="border-radius: 10px 10px 0 0; background: rgba(255, 255, 255, 0.26); background: linear-gradient(0deg, rgba(255, 255, 255, 0.26) 0%, #ffebb8 100%); background: -webkit-linear-gradient(0deg, rgba(255, 255, 255, 0.26) 0%, #ffebb8 100%); height: 200px;"></div>
                                     <div class="topic-content-box" style="padding: 20px;">
                                         <div class="bonus-number" style="position: absolute; top: 5px; left: 50%; transform: translateX(-50%); background: linear-gradient(45deg, #ffaa00, #ffaa00); border-radius: 5px; padding: 10px 20px; box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);">
                                             <h4 style="margin: 0; color: #000; font-weight: bold;">BONUS 01</h4>
@@ -395,7 +469,7 @@
                         <div class="col-lg-4 col-md-6">
                             <div class="single-topic text-center mb-30" style="border: 2px solid #ddd; border-radius: 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); background-color: rgba(255,255,255,0.5); -webkit-backdrop-filter: blur(10px); backdrop-filter: blur(10px); border: 1px solid rgba(255,255,255,0.25);">
                                 <div class="topic-img" style="position: relative;">
-                                    <div style="border-radius: 10px 10px 0 0; background: rgba(255, 255, 255, 0.26); background: -webkit-linear-gradient(0deg, rgba(255, 255, 255, 0.26) 0%, #ffebb8 100%); background: linear-gradient(0deg, rgba(255, 255, 255, 0.26) 0%, #ffebb8 100%); height: 200px;"></div>
+                                    <div style="border-radius: 10px 10px 0 0; background: rgba(255, 255, 255, 0.26); background: linear-gradient(0deg, rgba(255, 255, 255, 0.26) 0%, #ffebb8 100%); background: -webkit-linear-gradient(0deg, rgba(255, 255, 255, 0.26) 0%, #ffebb8 100%); height: 200px;"></div>
                                     <div class="topic-content-box" style="padding: 20px;">
                                         <div class="bonus-number" style="position: absolute; top: 5px; left: 50%; transform: translateX(-50%); background: linear-gradient(45deg, #ffaa00, #ffaa00); border-radius: 5px; padding: 10px 20px; box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);">
                                             <h4 style="margin: 0; color: #000; font-weight: bold;">BONUS 01</h4>
@@ -412,7 +486,7 @@
                         <div class="col-lg-4 col-md-6">
                             <div class="single-topic text-center mb-30" style="border: 2px solid #ddd; border-radius: 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); background-color: rgba(255,255,255,0.5); -webkit-backdrop-filter: blur(10px); backdrop-filter: blur(10px); border: 1px solid rgba(255,255,255,0.25);">
                                 <div class="topic-img" style="position: relative;">
-                                    <div style="border-radius: 10px 10px 0 0; background: rgba(255, 255, 255, 0.26); background: -webkit-linear-gradient(0deg, rgba(255, 255, 255, 0.26) 0%, #ffebb8 100%); background: linear-gradient(0deg, rgba(255, 255, 255, 0.26) 0%, #ffebb8 100%); height: 200px;"></div>
+                                    <div style="border-radius: 10px 10px 0 0; background: rgba(255, 255, 255, 0.26); background: linear-gradient(0deg, rgba(255, 255, 255, 0.26) 0%, #ffebb8 100%); background: -webkit-linear-gradient(0deg, rgba(255, 255, 255, 0.26) 0%, #ffebb8 100%); height: 200px;"></div>
                                     <div class="topic-content-box" style="padding: 20px;">
                                         <div class="bonus-number" style="position: absolute; top: 5px; left: 50%; transform: translateX(-50%); background: linear-gradient(45deg, #ffaa00, #ffaa00); border-radius: 5px; padding: 10px 20px; box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);">
                                             <h4 style="margin: 0; color: #000; font-weight: bold;">BONUS 01</h4>
@@ -431,7 +505,7 @@
                         <div class="col-lg-4 col-md-6">
                             <div class="single-topic text-center mb-30" style="border: 2px solid #ddd; border-radius: 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); background-color: rgba(255,255,255,0.5); -webkit-backdrop-filter: blur(10px); backdrop-filter: blur(10px); border: 1px solid rgba(255,255,255,0.25);">
                                 <div class="topic-img" style="position: relative;">
-                                    <div style="border-radius: 10px 10px 0 0; background: rgba(255, 255, 255, 0.26); background: -webkit-linear-gradient(0deg, rgba(255, 255, 255, 0.26) 0%, #ffebb8 100%); background: linear-gradient(0deg, rgba(255, 255, 255, 0.26) 0%, #ffebb8 100%); height: 200px;"></div>
+                                    <div style="border-radius: 10px 10px 0 0; background: rgba(255, 255, 255, 0.26); background: linear-gradient(0deg, rgba(255, 255, 255, 0.26) 0%, #ffebb8 100%); background: -webkit-linear-gradient(0deg, rgba(255, 255, 255, 0.26) 0%, #ffebb8 100%); height: 200px;"></div>
                                     <div class="topic-content-box" style="padding: 20px;">
                                         <div class="bonus-number" style="position: absolute; top: 5px; left: 50%; transform: translateX(-50%); background: linear-gradient(45deg, #ffaa00, #ffaa00); border-radius: 5px; padding: 10px 20px; box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);">
                                             <h4 style="margin: 0; color: #000; font-weight: bold;">BONUS 01</h4>
@@ -448,7 +522,7 @@
                         <div class="col-lg-4 col-md-6">
                             <div class="single-topic text-center mb-30" style="border: 2px solid #ddd; border-radius: 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); background-color: rgba(255,255,255,0.5); -webkit-backdrop-filter: blur(10px); backdrop-filter: blur(10px); border: 1px solid rgba(255,255,255,0.25);">
                                 <div class="topic-img" style="position: relative;">
-                                    <div style="border-radius: 10px 10px 0 0; background: rgba(255, 255, 255, 0.26); background: -webkit-linear-gradient(0deg, rgba(255, 255, 255, 0.26) 0%, #ffebb8 100%); background: linear-gradient(0deg, rgba(255, 255, 255, 0.26) 0%, #ffebb8 100%); height: 200px;"></div>
+                                    <div style="border-radius: 10px 10px 0 0; background: rgba(255, 255, 255, 0.26); background: linear-gradient(0deg, rgba(255, 255, 255, 0.26) 0%, #ffebb8 100%); background: -webkit-linear-gradient(0deg, rgba(255, 255, 255, 0.26) 0%, #ffebb8 100%); height: 200px;"></div>
                                     <div class="topic-content-box" style="padding: 20px;">
                                         <div class="bonus-number" style="position: absolute; top: 5px; left: 50%; transform: translateX(-50%); background: linear-gradient(45deg, #ffaa00, #ffaa00); border-radius: 5px; padding: 10px 20px; box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);">
                                             <h4 style="margin: 0; color: #000; font-weight: bold;">BONUS 01</h4>
@@ -467,7 +541,7 @@
                             <div class="col-lg-4 col-md-6">
                                 <div class="single-topic text-center mb-30" style="border: 2px solid #ddd; border-radius: 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); background-color: rgba(255,255,255,0.5); -webkit-backdrop-filter: blur(10px); backdrop-filter: blur(10px); border: 1px solid rgba(255,255,255,0.25);">
                                     <div class="topic-img" style="position: relative;">
-                                        <div style="border-radius: 10px 10px 0 0; background: rgba(255, 255, 255, 0.26); background: -webkit-linear-gradient(0deg, rgba(255, 255, 255, 0.26) 0%, #ffebb8 100%); background: linear-gradient(0deg, rgba(255, 255, 255, 0.26) 0%, #ffebb8 100%); height: 200px;"></div>
+                                        <div style="border-radius: 10px 10px 0 0; background: rgba(255, 255, 255, 0.26); background: linear-gradient(0deg, rgba(255, 255, 255, 0.26) 0%, #ffebb8 100%); background: -webkit-linear-gradient(0deg, rgba(255, 255, 255, 0.26) 0%, #ffebb8 100%); height: 200px;"></div>
                                         <div class="topic-content-box" style="padding: 20px;">
                                             <div class="bonus-number" style="position: absolute; top: 5px; left: 50%; transform: translateX(-50%); background: linear-gradient(45deg, #ffaa00, #ffaa00); border-radius: 5px; padding: 10px 20px; box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);">
                                                 <h4 style="margin: 0; color: #000; font-weight: bold;">BONUS 01</h4>
@@ -564,93 +638,7 @@
         
         <!-- About Area End -->
     </main>
-    <footer>
-     <div class="footer-wrappper footer-bg">
-        <!-- Footer Start-->
-        <div class="footer-area footer-padding">
-            <div class="container">
-                <div class="row justify-content-between">
-                    <div class="col-xl-4 col-lg-5 col-md-4 col-sm-6">
-                        <div class="single-footer-caption mb-50">
-                            <div class="single-footer-caption mb-30">
-                                <!-- logo -->
-                                <div class="footer-logo mb-25">
-                                    <a href="index.html"><img src="/img/logo/logo2_footer.png" alt=""></a>
-                                </div>
-                                <div class="footer-tittle">
-                                    <div class="footer-pera">
-                                        <p>The automated process starts as soon as your clothes go into the machine.</p>
-                                    </div>
-                                </div>
-                                <!-- social -->
-                                <div class="footer-social">
-                                    <a href="#"><i class="fab fa-twitter"></i></a>
-                                    <a href=""><i class="fab fa-facebook-f"></i></a>
-                                    <a href="#"><i class="fab fa-pinterest-p"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xl-2 col-lg-3 col-md-4 col-sm-5">
-                        <div class="single-footer-caption mb-50">
-                            <div class="footer-tittle">
-                                <h4>Our solutions</h4>
-                                <ul>
-                                    <li><a href="#">Design & creatives</a></li>
-                                    <li><a href="#">Telecommunication</a></li>
-                                    <li><a href="#">Restaurant</a></li>
-                                    <li><a href="#">Programing</a></li>
-                                    <li><a href="#">Architecture</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xl-2 col-lg-4 col-md-4 col-sm-6">
-                        <div class="single-footer-caption mb-50">
-                            <div class="footer-tittle">
-                                <h4>Support</h4>
-                                <ul>
-                                    <li><a href="#">Design & creatives</a></li>
-                                    <li><a href="#">Telecommunication</a></li>
-                                    <li><a href="#">Restaurant</a></li>
-                                    <li><a href="#">Programing</a></li>
-                                    <li><a href="#">Architecture</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6">
-                        <div class="single-footer-caption mb-50">
-                            <div class="footer-tittle">
-                                <h4>Company</h4>
-                                <ul>
-                                    <li><a href="#">Design & creatives</a></li>
-                                    <li><a href="#">Telecommunication</a></li>
-                                    <li><a href="#">Restaurant</a></li>
-                                    <li><a href="#">Programing</a></li>
-                                    <li><a href="#">Architecture</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- footer-bottom area -->
-        <div class="footer-bottom-area">
-            <div class="container">
-                <div class="footer-border">
-                    <div class="row d-flex align-items-center">
-                        <div class="col-xl-12 ">
-                            
-                          </div>
-                      </div>
-                  </div>
-              </div>
-          </div>
-          <!-- Footer End-->
-      </div>
-  </footer> 
+    
   <!-- Scroll Up -->
   <div id="back-top" >
     <a title="Go to Top" href="#"> <i class="fas fa-level-up-alt"></i></a>
