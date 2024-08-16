@@ -617,15 +617,15 @@
         
         <!-- Services End -->
         <!--? About Area-2 Start -->
-        <section id="faq" style="padding: 40px 20px; background-color: rgba(255, 170, 0, 0.337);border-radius: 40px;">
-            <h2 style="font-size: 42px; color: #000000; text-align: center; margin-bottom: 30px; font-family: 'Russo One', sans-serif">Frequently Asked Questions</h2>
+        <section id="faq" style="padding: 100px 20px; background-color: rgba(255, 170, 0, 0.337);border-radius: 40px;">
+            <h2 class="faq-section" style="font-size: 35px; color: #000000; text-align: center; margin-bottom: 30px; font-family: 'Russo One', sans-serif">Frequently Asked Questions</h2>
             <div class="faq-container" style="max-width: 800px; margin: 0 auto;">
                 <div class="faq-item" style="background-color: #fff; border: 1px solid #ddd; border-radius: 8px; margin: 10px 0; padding: 20px; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);">
                     <h3 class="faq-question" style="font-size: 20px; color: #333; cursor: pointer; margin-bottom: 10px;">Question 1</h3>
                     <div class="faq-answer" style="display: none; font-size: 16px; color: #555;">
                         Answer to question 1. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                     </div>
-                </div>
+                </div>  
                 <div class="faq-item" style="background-color: #fff; border: 1px solid #ddd; border-radius: 8px; margin: 10px 0; padding: 20px; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);">
                     <h3 class="faq-question" style="font-size: 20px; color: #333; cursor: pointer; margin-bottom: 10px;">Question 2</h3>
                     <div class="faq-answer" style="display: none; font-size: 16px; color: #555;">
@@ -648,10 +648,32 @@
         <!-- About Area End -->
     </main>
     
-  <!-- Scroll Up -->
-  <div id="back-top" >
-    <a title="Go to Top" href="#"> <i class="fas fa-level-up-alt"></i></a>
+  <!-- Sticky Footer Section -->
+  <div class="sticky-footer">
+    <div class="sticky-price">
+        $299 
+        <span class="price-cut">$1200</span>
+    </div>
+    <div class="sticky-register">
+        <a href="#" class="register-btn">Register Now</a>
+    </div>
 </div>
+<script>
+   window.addEventListener('scroll', function() {
+    const section = document.getElementById('slider-area');
+    const triggerPoint = 1000; // Adjust this value based on when you want the section to appear
+
+    if (window.scrollY > triggerPoint) {
+        section.style.display = 'block';
+        section.style.visibility = 'visible';
+        section.style.opacity = '1';
+        section.style.transition = 'opacity 1s ease-in-out';
+    }
+});
+
+</script>
+
+
 
 <!-- JS here -->
 <script src="/js/vendor/modernizr-3.5.0.min.js"></script>
