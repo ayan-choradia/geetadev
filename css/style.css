@@ -68,6 +68,8 @@ svg path {
    height: 200px;
    max-height: 200px;
 }
+@media screen and (max-width: 2900px) and (min-width: 800px) {
+
 
 .glitch-wrapper {
    width: 100%;
@@ -128,12 +130,17 @@ svg path {
 }
 .glitch-img{
    padding-bottom: 20px;
+   align-items: center;
 }
 
 .glitch-imgg{
-   padding-right:20px
-   margin-right:20px;
+   padding-right:20px;
+   margin-left:180px;
    
+   
+   
+   
+}
 }
 
 
@@ -153,7 +160,7 @@ svg path {
    top: 0;
    left: 0;
    z-index: -1;
-   background: #ffaa00;
+   background: #FFDD99;
    overflow: hidden;
    border-radius: 40px;
 }
@@ -211,11 +218,18 @@ svg path {
       text-align: center;
       background-color: rgba(33, 33, 33, 0);
       font-family: 'Plus Jakarta Sans', sans-serif;
-      margin-bottom: 20px;
+     
       padding-bottom: 5px;
       padding-right: 20px;
      
    }
+   .glitch-imgg{
+      padding-right:30px;
+      align-items: center;
+      
+      
+   }
+
    .glitch-img{
       padding-bottom: 20px;
       align-items: center;
@@ -712,6 +726,8 @@ iframe {
        width: 100%; /* Make the image responsive for mobile */
        height: auto;
        
+
+   
    }
 }
 
@@ -955,7 +971,7 @@ iframe {
    padding-top: 70px; /* Adjust padding */
    padding-bottom: 10px; /* Adjust padding */
    margin-right: 0px; /* Adjust padding */
-   margin-left:-10px; /* Adjust margin */
+   margin-left:-12px; /* Adjust margin */
    align-items: center; /* Adjust alignment */
   
    margin-bottom: 0px; /* Adjust margin */
@@ -1131,8 +1147,8 @@ iframe {
    .button-grid {
        grid-template-columns: 2fr; /* One button per row */
        gap: 10px;
-       margin: 0px 63px 100px 10px;
-       
+       margin: 10px 63px 100px 10px;
+
        
    }
 
@@ -1170,12 +1186,12 @@ iframe {
        margin: 0;
        padding-left: 55px; /* Space for the icon */
        width: 100%;
-       line-height: 1.4;
+       line-height: 1.5;
        word-wrap: break-word;
        white-space: nowrap; /* Prevent line breaks */
        overflow: hidden;
        text-overflow: ellipsis; /* Handle overflow gracefully */
-       font-size: 9px;
+       font-size: 10px;
    }
 
    .info-button p:first-child {
